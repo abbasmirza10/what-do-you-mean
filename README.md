@@ -31,3 +31,9 @@
       ```bash
       npm install express
       ```
+  4. Run development server
+
+      ```bash
+      cd backend/expressapp/
+      DEBUG=expressapp:* npm start
+      ```
