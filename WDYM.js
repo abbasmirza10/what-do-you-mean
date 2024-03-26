@@ -5,7 +5,7 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 app.get('/', (req, res) => {
-    //res.send('Welcome to the What Do You Mean App!');
+     res.sendFile('homepage.html', {root: __dirname})
 });
 
 app.get('/sentiment-analysis', (req, res) => {
