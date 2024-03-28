@@ -1,6 +1,6 @@
 class SentimentClassifier:
-  def __init__(self, mode = 0):
-    self.mode = mode
+  def __init__(self):
+    self
 
-  def predict(self, sentence):
-    return hash(sentence)
+  def predict(self, sentence, mode):
+    return hash((sentence, mode))

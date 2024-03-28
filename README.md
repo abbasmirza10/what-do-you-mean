@@ -35,6 +35,8 @@
 
     ```bash
     npm install express
+    npm install child_process
+    npm install axios
     ```
 
 4. Run development server
@@ -42,4 +44,9 @@
     ```bash
     cd backend/expressapp/
     DEBUG=expressapp:* npm start
+    ```
+5. Run model server on another terminal on the same machine
+
+    ```
+    flask --app model-http run
     ```
