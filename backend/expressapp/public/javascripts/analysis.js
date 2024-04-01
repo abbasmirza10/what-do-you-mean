@@ -13,9 +13,9 @@ $(form).submit( () => {
   })
   .then( (res) => res.json())
   .then( (res) => { 
-    if (res.result.sentiment.label == 'positive') {
+    if (res.result.sentiment.label == 'POSITIVE') {
       $('#result-text').text('😀 Positive!');
-    } else if (res.result.sentiment.label == 'positive') {
+    } else if (res.result.sentiment.label == 'NEGATIVE') {
       $('#result-text').text('😐 Negative.');
     }
     
