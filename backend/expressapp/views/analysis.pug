@@ -1,0 +1,22 @@
+extends layout
+
+block content
+    <header>
+        <h1>What Do You Mean</h1>
+        <p>The only website you need for all your text & tone analysis requirements!</p>
+        <a href="#" class="cta-button">Analyze Now!</a>
+    </header>
+    <div class="container">
+        <form id="form">
+            <div class="form-wrapper">
+                <label for="sentence-field" class="text-input-label">Sentence goes here!</label>
+                <br>
+                <input type="text" id="sentence-field" name="sentence-field" class="text-input" />
+            </div>
+        </form>
+    </div>
+    <div class="container result-wrapper hide" id="result">
+        <h2>Analysis Results</h2>
+        <p id="result-text"></p>
+    </div>
+    <script src="javascripts/analysis.js"></script>

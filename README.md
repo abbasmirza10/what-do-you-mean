@@ -45,8 +45,9 @@
     cd backend/expressapp/
     DEBUG=expressapp:* npm start
     ```
+
 5. Run model server on another terminal on the same machine
 
-    ```
+    ```bash
     flask --app model-http run
     ```
