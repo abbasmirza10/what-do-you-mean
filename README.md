@@ -6,14 +6,14 @@
 
 ## Tools and Frameworks
 
+### Huggingface transformers for sentiment analysis
+
+* [Huggingface](https://huggingface.co/blog/sentiment-analysis-python)
+
 ### Sentiment Analysis libraries
 
-* [SpaCy](https://spacy.io/universe/project/spacy-textblob) (SpaCy)
+* [SpaCy](https://spacy.io/universe/project/spacy-textblob)
 * [BERT](https://huggingface.co/docs/transformers/model_doc/bert)
-
-### Backend Framework
-
-**Express** is chosen over Nest. Express offers greater flexibility, while Nest is very structured and is generally built with Typescript. The scale of this project makes Express the better framework
 
 ## Environment Setup - Development
 
@@ -31,7 +31,7 @@
     nvm install 20.11.1
     ```
 
-3. Install Express using npm
+3. Install Express using npm (skip this step)
 
     ```bash
     npm install express
@@ -46,7 +46,14 @@
     DEBUG=expressapp:* npm start
     ```
 
-5. Run model server on another terminal on the same machine
+5. Install python libraries
+
+    ```bash
+    pip install flask
+    pip install transformers
+    ```
+
+6. Run model server on another terminal on the same machine
 
     ```bash
     flask --app model-http run

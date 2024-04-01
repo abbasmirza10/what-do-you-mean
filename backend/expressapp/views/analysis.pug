@@ -7,16 +7,20 @@ block content
         <a href="#" class="cta-button">Analyze Now!</a>
     </header>
     <div class="container">
-        <form id="form">
-            <div class="form-wrapper">
-                <label for="sentence-field" class="text-input-label">Sentence goes here!</label>
-                <br>
-                <input type="text" id="sentence-field" name="sentence-field" class="text-input" />
+        <div class="form-wrapper">
+            <form id="form">
+                <div class="text-input-label-wrapper" style="margin-bottom: 10px;">
+                    <label for="text-input" class="text-input-label">Sentence goes here!</label>
+                </div>
+                <div class="text-input-wrapper" id="text-input-wrapper">
+                    <input type="text" id="text-input" name="text-input" class="text-input" />
+                </div>
+            </form>
+        </div>
+        <div class="result-wrapper hide" id="result-wrapper">
+            <div class="hide" id="result-content" style="padding-left: 5px; padding-right: 5px;">
+                <p id="result-text"></p>
             </div>
-        </form>
-    </div>
-    <div class="container result-wrapper hide" id="result">
-        <h2>Analysis Results</h2>
-        <p id="result-text"></p>
+        </div>
     </div>
     <script src="javascripts/analysis.js"></script>
