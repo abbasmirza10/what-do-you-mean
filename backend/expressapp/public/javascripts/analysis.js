@@ -13,17 +13,23 @@ $(form).submit( () => {
   })
   .then( (res) => res.json())
   .then( (res) => { 
+    // Update sentiment bar
+    var positivity = 0;
     if (res.result.sentiment.label == 'POSITIVE') {
-      $('#result-text').text('😀 Positive!');
+      positivity = res.result.sentiment.score;
     } else if (res.result.sentiment.label == 'NEGATIVE') {
-      $('#result-text').text('😐 Negative.');
+      positivity = 1 - res.result.sentiment.score;
     }
+    $('#result-bar').attr('value', 0.05 + positivity * 0.9);
+    $('#result-score').text(Math.round(positivity * 100).toString() + '%');
+    return res;
+  }).then( (res) => {
     
-    // show and animate the result background-box
+    // Show and animate the result background-box
     $('#result-wrapper').removeClass('hide');
     $('#result-wrapper').addClass('result-wrapper-animation');
     
-    // remove rounded edges between background-boxes
+    // Remove rounded edges between background-boxes
     $('#text-input-wrapper').css('border-bottom-left-radius', '0px');
     $('#text-input-wrapper').css('border-bottom-right-radius', '0px');
     $('#result-wrapper').css('border-top-left-radius', '0px');
