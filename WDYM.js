@@ -5,7 +5,7 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 app.get('/', (req, res) => {
-     res.sendFile('homepage.html', {root: __dirname});
+    res.sendFile('homepage.html', {root: __dirname});
 });
 
 app.get('/sentiment-analysis', (req, res) => {
@@ -24,6 +24,6 @@ app.get('/is-that-sarcasm', (req, res) => {
 });
 
 app.listen(port, () => {
-    //Modify accordingly
+    //Modify accordingly - to check interface
     console.log(`Server is running on port ${port}`);
 });

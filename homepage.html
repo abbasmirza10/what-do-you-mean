@@ -46,21 +46,44 @@
         .cta-button:hover {
             background-color: #365d7d;
         }
+        .menu {
+            position: absolute;
+            top: 20px; /*Modify if we want other positioning */
+            right: 20px; /*Modify if we want other positioning */
+        }
+        .menu-item {
+            display: inline-block;
+            margin-left: 10px;
+            color: #eef3f9;
+            text-decoration: none;
+            font-size: 0.6;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>What Do You Mean</h1>
+        <h1>What Do You Mean?</h1>
         <p>The only website you need for all your text & tone analysis requirements!</p>
         <a href="#" class="cta-button">Analyze Now!</a>
+        <!-- Menu options -->
+        <div class="menu">
+            <a href="#" class="menu-item">Text Sentiment Detector</a>
+            <a href="#" class="menu-item">Sarcasm Detector</a>
+            <a href="#" class="menu-item">Crush Level Detector</a>
+        </div>
     </header>
     <div class="container">
-        <h2>About Us</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+        <h2>Purpose</h2>
+        <p>Texting is a very opaque medium, and it is difficult to interpret emotional state from the way a person types. 
+        But in conversations with friends, family, and important people it is especially important to understand how the other interlocutor feels in a given interaction. 
+        What Do You Mean (WDYM) aims to clarify these feelings using sentiment analysis. 
+        The application can help the user identify their friends’ emotional states, whether their classmates are being sarcastic, whether their crush is flirting with them, and more.</p>
         <h2>Insights</h2>
         <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nullam id dolor id nibh ultricies vehicula ut id elit. Maecenas faucibus mollis interdum.</p>
-        <!--<h2>Contact Us</h2>
-        <p>Email: info@example.com<br>Phone: 123-456-7890</p>-->
+        <h2>About Us</h2>
+        <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nullam id dolor id nibh ultricies vehicula ut id elit. Maecenas faucibus mollis interdum.</p>
+        <h2>Contact Us</h2>
+        <p>Email: info@example.com<br>Phone: 123-456-7890</p>
     </div>
 </body>
 </html>
