@@ -31,6 +31,21 @@ app.get('/is-that-sarcasm', (req, res) => {
     //res.send('Sarcasm detection results will be displayed here');
 });
 
+app.post('/model', (req, res) => {
+
+    let demoModel = (input) => {
+        let output = {analysis: {
+            sentiment: {label: 'NEGATIVE', score: 0.76978},
+            sarcasm: {label: 'YES', score: 0.97375}
+        }, error: None, content: model_input}
+        return output;
+    };
+
+    let modelInput = req.body;
+    let modelOutput = demoModel(modelInput);
+    res.json(modelOutput);
+});
+
 app.listen(port, () => {
     //Modify accordingly - to check interface
     console.log(`Server is running on port ${port}`);
