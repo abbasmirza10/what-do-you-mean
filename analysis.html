@@ -1,0 +1,38 @@
+<!-- Home page design; very wip! -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDYM</title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <script src="javascripts/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>What Do You Mean</h1>
+        <p>The only website you need for all your text & tone analysis requirements!</p>
+        <a href="#" class="cta-button">Analyze Now!</a>
+    </header>
+    <div class="container">
+        <div class="form-wrapper">
+            <form id="form">
+                <div class="text-input-label-wrapper" style="margin-bottom: 10px;">
+                    <label for="text-input" class="text-input-label">Sentence goes here!</label>
+                </div>
+                <div class="text-input-wrapper" id="text-input-wrapper">
+                    <input type="text" id="text-input" name="text-input" class="text-input" />
+                </div>
+            </form>
+        </div>
+        <div class="result-wrapper hide" id="result-wrapper">
+            <div class="hide" id="result-content" style="padding-left: 5px; padding-right: 5px;">
+                <p>Positivity <b id="sentiment-score">0%</b> 😐 <progress id="sentiment-bar" max="100" value="50" style="width: 40%"></progress> 😀</p>
+                <p>Sarcasm <b id="sarcasm-score">0%</b> 🤗 <progress id="sarcasm-bar" max="100" value="50" style="width: 40%"></progress> 😝</p>
+            </div>
+        </div>
+    </div>
+    <script src="javascripts/analysis.js"></script>
+</body>
+</html>

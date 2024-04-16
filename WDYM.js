@@ -31,13 +31,24 @@ app.get('/is-that-sarcasm', (req, res) => {
     //res.send('Sarcasm detection results will be displayed here');
 });
 
+app.use(express.static(__dirname + '/public'));
+
+app.get('/analysis', (req, res) => {
+    res.sendFile('analysis.html', {root: __dirname});
+});
+
 app.post('/model', (req, res) => {
 
     let demoModel = (input) => {
+        let sentimentLabels = ['NEGATIVE', 'POSITIVE'];
+        let sarcasmLabels = ['NO', 'YES'];
+        let sentimentLabel = sentimentLabels[Math.random() > 0.5];
+        let sarcasmLabel = sarcasmLabels[Math.random() > 0.5];
+
         let output = {analysis: {
-            sentiment: {label: 'NEGATIVE', score: 0.76978},
-            sarcasm: {label: 'YES', score: 0.97375}
-        }, error: None, content: model_input}
+            sentiment: {label: sentimentLabel, score: Math.random()},
+            sarcasm: {label: sarcasmLabel, score: Math.random()}
+        }, error: null, content: input}
         return output;
     };
 
