@@ -5,14 +5,9 @@ from transformers import pipeline
 class SentimentClassifier:
   def __init__(self):
     self.sentiment_pipeline = pipeline('sentiment-analysis')
-
-  def predict(self, text, mode):
-    sentiment = self.sentiment_analysis(text)
-    result = {'sentiment': sentiment}
-    print(result)
-    return result
   
-  def sentiment_analysis(self, text):
-    data = [text]
-    sentiment = self.sentiment_pipeline(data)[0]
-    return sentiment
+  def predict(self, x):
+    prediction = self.sentiment_pipeline([x])[0]
+    label = prediction['label']
+    score = prediction['score']
+    return {'label': label, 'score': round(float(score), 5)}

@@ -30,7 +30,7 @@ A successful analysis responds in **JSON** with status `400`. **Analysis** inclu
     "sentiment": {"label": "POSITIVE", "score": 0.97},
     "sarcasm": {"label": "NO", "score": 0.97}
   }, 
-  "error": None, 
+  "error": null, 
   "content": {"sentence": "She fell asleep preprocessing NLP datasets.", "mode": 0}
 }
 ```
@@ -53,8 +53,8 @@ Let's say you are building a web frontend. Send a request using the **fetch** fu
   })
   .then( (res) => res.json())
   .then( (res) => {
-   $('#sentiment-label').text(res.result.sentiment.label); // update the a text block
-   $('#sentiment-score').attr('value', res.result.sentiment.score); // update a progress bar
+    $('#sentiment-bar').text(res.analysis.sentiment.label); // update the a text block
+    $('#sentiment-score').attr('value', res.analysis.sentiment.score); // update a progress bar
     console.log('response JSON', res);
   });
 ```

@@ -12,19 +12,38 @@ $(form).submit( () => {
     })
   })
   .then( (res) => res.json())
-  .then( (res) => { 
-    // Update sentiment bar
-    var positivity = 0;
-    if (res.result.sentiment.label == 'POSITIVE') {
-      positivity = res.result.sentiment.score;
-    } else if (res.result.sentiment.label == 'NEGATIVE') {
-      positivity = 1 - res.result.sentiment.score;
+  .then( (res) => {
+    // calculate positivity
+    var positivity = Math.round(res.analysis.sentiment.score * 100);
+    if (res.analysis.sentiment.label == 'NEGATIVE') {
+      positivity = 100 - positivity;
     }
-    $('#result-bar').attr('value', 0.05 + positivity * 0.9);
-    $('#result-score').text(Math.round(positivity * 100).toString() + '%');
+    // Update sentiment bar
+    $('#sentiment-bar').attr('value', 5 + positivity * 0.9);
+
+    // Update sentiment score
+    score_text = positivity.toString() + '%';
+    if (positivity < 10) {
+      score_text = ' ' + score_text;
+    }
+    $('#sentiment-score').text(score_text);
     return res;
+
   }).then( (res) => {
-    
+    // calculate sarcasm
+    var sarcasm = Math.round(res.analysis.sarcasm.score * 100);
+    if (res.analysis.sarcasm.label == 'NO') {
+      sarcasm = 100 - sarcasm;
+    }
+    // Update sarcasm bar
+    $('#sarcasm-bar').attr('value', 5 + sarcasm * 0.9);
+
+    // Update sarcasm score
+    score_text = sarcasm.toString() + '%';
+    $('#sarcasm-score').text(score_text);
+    return res;
+
+  }).then( (res) => {
     // Show and animate the result background-box
     $('#result-wrapper').removeClass('hide');
     $('#result-wrapper').addClass('result-wrapper-animation');
