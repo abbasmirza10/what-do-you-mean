@@ -89,6 +89,18 @@ p {
   animation-iteration-count: 1;
   height: 200px;
 }
+.menu {
+  position: absolute;
+  top: 20px; /*Modify if we want other positioning */
+  right: 20px; /*Modify if we want other positioning */
+}
+.menu-item {
+  display: inline-block;
+  margin-left: 10px;
+  color: #eef3f9;
+  text-decoration: none;
+  font-size: 0.6;
+}
 
 @keyframes drop {
   0% {
