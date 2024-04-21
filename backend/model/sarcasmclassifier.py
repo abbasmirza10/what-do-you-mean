@@ -4,10 +4,8 @@ from torch import nn
 from torch.optim import Adam
 import torchinfo
 
-from tqdm import tqdm
 import pandas as pd
 import numpy as np
-from sklearn.metrics import classification_report, roc_auc_score
 from scipy.special import softmax
 
 class BertClassifier(nn.Module):

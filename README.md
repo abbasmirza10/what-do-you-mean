@@ -35,7 +35,6 @@
 
     ```bash
     npm install express
-    npm install child_process
     npm install axios
     ```
 
@@ -49,8 +48,12 @@
 5. Install python libraries
 
     ```bash
-    pip install flask
-    pip install transformers
+    pip3 install flask
+    pip3 install transformers
+    pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+    pip3 install scikit-learn
+    pip3 install scipy
+    pip3 install pandas
     ```
 
 6. Run model server on another terminal on the same machine
