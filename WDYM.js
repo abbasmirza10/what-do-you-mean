@@ -8,6 +8,10 @@ app.get('/', (req, res) => {
     res.sendFile('homepage.html', {root: __dirname});
 });
 
+app.get('/analysis', (req, res) => {
+    res.sendFile('analysis.html', {root: __dirname});
+});
+
 app.get('/sentiment-analysis', (req, res) => {
     // TODO: Implement sentiment analysis
     //res.send('Sentiment analysis results display over here');
