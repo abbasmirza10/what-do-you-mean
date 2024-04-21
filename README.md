@@ -31,21 +31,14 @@
     nvm install 20.11.1
     ```
 
-3. Install Express using npm (skip this step)
-
-    ```bash
-    npm install express
-    npm install axios
-    ```
-
-4. Run development server
+3. Run development server
 
     ```bash
     cd backend/expressapp/
     DEBUG=expressapp:* npm start
     ```
 
-5. Install python libraries
+4. Install python libraries
 
     ```bash
     pip3 install flask
