@@ -38,6 +38,20 @@ p {
 .cta-button:hover {
   background-color: #365d7d;
 }
+.home-button {
+  display: inline-block;
+  background-color: #001b2e;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  transition: background-color 0.3s ease;
+}
+.home-button:hover {
+  color: #365d7d;
+  background-color: #001b2e;
+}
 .form-wrapper {
   position: relative;
   width: 50%;
