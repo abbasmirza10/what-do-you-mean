@@ -52,5 +52,6 @@
 6. Run model server on another terminal on the same machine
 
     ```bash
+    cd backend/model
     flask --app model-http run
     ```
