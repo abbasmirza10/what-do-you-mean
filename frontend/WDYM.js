@@ -8,12 +8,8 @@ app.get('/', (req, res) => {
     res.sendFile('homepage.html', {root: __dirname});
 });
 
-app.get('/signup', (req, res) => {        
-    res.sendFile('signup.html', {root: __dirname});      
-});
-
-app.get('/login', (req, res) => {        
-    res.sendFile('login.html', {root: __dirname});      
+app.get('/analysis', (req, res) => {
+    res.sendFile('analysis.html', {root: __dirname});
 });
 
 app.get('/sentiment-analysis', (req, res) => {

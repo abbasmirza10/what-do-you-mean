@@ -6,70 +6,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WDYM</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #b3cde4;
-            color: #001b2e;
-        }
-        header {
-            background-color:#001b2e;
-            padding: 20px;
-            text-align: center;
-            color: #eef3f9;
-        }
-        h1 {
-            font-size: 3em;
-            margin-bottom: 20px;
-        }
-        p {
-            font-size: 1.2em;
-            line-height: 1.5;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        .cta-button {
-            display: inline-block;
-            background-color: #537692;
-            color: #fff;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 1.2em;
-            transition: background-color 0.3s ease;
-        }
-        .cta-button:hover {
-            background-color: #365d7d;
-        }
-        .menu {
-            position: absolute;
-            top: 20px; /*Modify if we want other positioning */
-            right: 20px; /*Modify if we want other positioning */
-        }
-        .menu-item {
-            display: inline-block;
-            margin-left: 10px;
-            color: #eef3f9;
-            text-decoration: none;
-            font-size: 0.6;
-        }
-    </style>
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <script src="javascripts/jquery-3.7.1.min.js"></script>
 </head>
 <body>
     <header>
         <h1>What Do You Mean?</h1>
         <p>The only website you need for all your text & tone analysis requirements!</p>
-        <a href="signup" class="cta-button">Analyze Now!</a>
+        <a href="analysis" class="cta-button">Analyze Now!</a>
         <!-- Menu options -->
         <div class="menu">
-            <a href="#" class="menu-item">Text Sentiment Detector</a>
-            <a href="#" class="menu-item">Sarcasm Detector</a>
-            <a href="#" class="menu-item">Crush Level Detector</a>
+            <a href="analysis" class="menu-item">Text Sentiment Detector</a>
+            <a href="analysis" class="menu-item">Sarcasm Detector</a>
         </div>
     </header>
     <div class="container">
