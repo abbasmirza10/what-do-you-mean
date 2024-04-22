@@ -1,9 +1,10 @@
 const express = require('express');
-
+const bodyParser = require('body-parser');
 const app = express();
 
 const port = process.env.PORT || 3000;
 
+app.use(bodyParser.json()); // parse the JSON
 app.get('/', (req, res) => {
     res.sendFile('homepage.html', {root: __dirname});
 });
@@ -56,4 +57,5 @@ app.post('/model', (req, res) => {
 app.listen(port, () => {
     //Modify accordingly - to check interface
     console.log(`Server is running on port ${port}`);
+    console.log('Link to server : http://localhost:3000/');
 });
