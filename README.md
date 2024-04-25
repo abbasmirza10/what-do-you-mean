@@ -23,24 +23,26 @@
     nvm install 20.11.1
     ```
 
-3. Install python libraries
-
-    ```bash
-    pip3 install -r requirements.txt
-    ```
-
-4. Run Express server
+3. Run Express server
 
     ```bash
     cd backend/expressapp/
     DEBUG=expressapp:* npm start
     ```
 
-5. Run NLP models
-
-    **_NOTE:_** Run this command on a separate terminal on the same machine.
+4. Start virtual environment
 
     ```bash
     cd backend/model
-    flask --app model-http run
+    sudo apt install python3-venv
+    source env/bin/activate
+    ```
+
+5. Run NLP models
+
+    **_NOTE:_** Run this command on a separate terminal on the same machine. Install python libraries according to error message.
+
+    ```bash
+    cd backend/model
+    python3 model-http.py
     ```
