@@ -1,14 +1,20 @@
-
+@font-face {
+  font-family: 'font1';
+  src: url('Abel/Comfortaa-VariableFont_wght.ttf') format(truetype);
+}
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'font1';
   margin: 0;
   padding: 0;
-  background-color: #b3cde4;
+  background-color: #e6f3ff;
   color: #001b2e;
 }
 header {
-  background-color:#001b2e;
-  padding: 20px;
+  font-family: 'font1';
+  background-image: url('headerbg.jpg'); /* Path to your image */
+  background-size: cover; /* Cover the entire header */
+  background-position: center;
+  padding: 50px;
   text-align: center;
   color: #eef3f9;
 }
@@ -27,7 +33,7 @@ p {
 }
 .cta-button {
   display: inline-block;
-  background-color: #537692;
+  background-color: #3F8199;
   color: #fff;
   padding: 10px 20px;
   text-decoration: none;
@@ -40,7 +46,6 @@ p {
 }
 .home-button {
   display: inline-block;
-  background-color: #001b2e;
   color: #fff;
   padding: 10px 20px;
   text-decoration: none;
@@ -50,7 +55,6 @@ p {
 }
 .home-button:hover {
   color: #365d7d;
-  background-color: #001b2e;
 }
 .form-wrapper {
   position: relative;
