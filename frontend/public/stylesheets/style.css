@@ -2,8 +2,12 @@
   font-family: 'font1';
   src: url('Abel/Comfortaa-VariableFont_wght.ttf') format(truetype);
 }
+@font-face {
+  font-family: 'font2';
+  src: url('Lora/Lora-VariableFont_wght.ttf') format(truetype);
+}
 body {
-  font-family: 'font1';
+  font-family: 'font2';
   margin: 0;
   padding: 0;
   background-color: #e6f3ff;
@@ -113,6 +117,7 @@ p {
   right: 20px; /*Modify if we want other positioning */
 }
 .menu-item {
+  font-family: font2;
   display: inline-block;
   margin-left: 10px;
   color: #eef3f9;
