@@ -45,7 +45,7 @@
 
 5. Run NLP models
 
-    **_NOTE:_** Run this command on a separate terminal on the same machine. Install python libraries according to error message.
+    **_NOTE:_** Run this command on a separate terminal on the same machine. Install python libraries as prompted.
 
     ```bash
     cd backend/model
