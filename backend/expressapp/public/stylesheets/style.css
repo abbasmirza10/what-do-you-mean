@@ -1,16 +1,27 @@
-
+@font-face {
+  font-family: 'font1';
+  src: url('Abel/Comfortaa-VariableFont_wght.ttf') format(truetype);
+}
+@font-face {
+  font-family: 'font2';
+  src: url('Lora/Lora-VariableFont_wght.ttf') format(truetype);
+}
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'font2';
   margin: 0;
   padding: 0;
-  background-color: #b3cde4;
+  background-color: #e6f3ff;
   color: #001b2e;
 }
 header {
-  background-color:#001b2e;
-  padding: 20px;
+  font-family: 'font1';
+  background-image: url('headerbg.jpg'); /* Path to your image */
+  background-size: cover; /* Cover the entire header */
+  background-position: center;
+  padding: 50px;
   text-align: center;
   color: #eef3f9;
+  margin-bottom: 40px;
 }
 h1 {
   font-size: 3em;
@@ -19,6 +30,7 @@ h1 {
 p {
   font-size: 1.2em;
   line-height: 1.5;
+  margin-bottom: 70px; 
 }
 .container {
   max-width: 1200px;
@@ -27,7 +39,7 @@ p {
 }
 .cta-button {
   display: inline-block;
-  background-color: #537692;
+  background-color: #3F8199;
   color: #fff;
   padding: 10px 20px;
   text-decoration: none;
@@ -37,6 +49,18 @@ p {
 }
 .cta-button:hover {
   background-color: #365d7d;
+}
+.home-button {
+  display: inline-block;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  transition: background-color 0.3s ease;
+}
+.home-button:hover {
+  color: #00213b;
 }
 .form-wrapper {
   position: relative;
@@ -87,7 +111,20 @@ p {
 .result-wrapper-animation {
   animation: drop 0.5s ease-in;
   animation-iteration-count: 1;
-  height: 200px;
+  height: 120px;
+}
+.menu {
+  position: absolute;
+  top: 20px; /*Modify if we want other positioning */
+  right: 20px; /*Modify if we want other positioning */
+}
+.menu-item {
+  font-family: font2;
+  display: inline-block;
+  margin-left: 10px;
+  color: #eef3f9;
+  text-decoration: none;
+  font-size: 0.6;
 }
 
 @keyframes drop {
@@ -95,10 +132,37 @@ p {
     height: 0px;
   }
   100% {
-    height: 200px;
+    height: 120px;
   }
 }
 
 .hide {
   display: none;
+}
+
+.about-us-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.member {
+  flex: 1;
+  text-align: center;
+  margin-right: 20px;
+}
+
+.member img {
+  width: 150px; 
+  border-radius: 50%; 
+  margin-bottom: 10px;
+}
+
+.member h3 {
+  margin-bottom: 5px;
+}
+
+.member p {
+  font-size: 0.9em;
 }

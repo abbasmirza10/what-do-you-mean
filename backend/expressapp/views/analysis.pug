@@ -2,9 +2,8 @@ extends layout
 
 block content
     <header>
-        <h1>What Do You Mean</h1>
-        <p>The only website you need for all your text & tone analysis requirements!</p>
-        <a href="#" class="cta-button">Analyze Now!</a>
+        <h1><a href="/" class="home-button">What Do You Mean?</a></h1>
+        <p style="font-family: font2">The only website you need for all your text & tone analysis requirements!</p>
     </header>
     <div class="container">
         <div class="form-wrapper">
@@ -19,8 +18,8 @@ block content
         </div>
         <div class="result-wrapper hide" id="result-wrapper">
             <div class="hide" id="result-content" style="padding-left: 5px; padding-right: 5px;">
-                <p>Positivity <b id="sentiment-score">0%</b> 😐 <progress id="sentiment-bar" max="100" value="50" style="width: 40%"></progress> 😀</p>
-                <p>Sarcasm <b id="sarcasm-score">0%</b> 🤗 <progress id="sarcasm-bar" max="100" value="50" style="width: 40%"></progress> 😝</p>
+                <p style="margin-bottom: 10px;">Positivity <b id="sentiment-score">0%</b> 😐 <progress id="sentiment-bar" max="100" value="50" style="width: 40%"></progress> 😀</p>
+                <p style="margin-bottom: 10px;">Sarcasm <b id="sarcasm-score">0%</b> 🤗 <progress id="sarcasm-bar" max="100" value="50" style="width: 40%"></progress> 😝</p>
             </div>
         </div>
     </div>
