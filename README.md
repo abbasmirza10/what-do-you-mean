@@ -16,6 +16,7 @@ Full proposal linked [here](https://docs.google.com/document/d/1ecNHxRK2Cjk1Bu6y
 * Particularly helpful for people who have difficulty interpreting tonality and sarcasm from text
 
 ## Tools and Frameworks
+![technical architecture](https://github.com/CS222-UIUC-SP24/group-project-team-72/assets/59347012/45b13996-3943-4780-b86d-8dec4381280f)
 
 * [BERT](https://huggingface.co/docs/transformers/model_doc/bert)
 * [Huggingface](https://huggingface.co/blog/sentiment-analysis-python)
