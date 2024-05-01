@@ -9,7 +9,6 @@
 
 ## Tools and Frameworks
 
-* [SpaCy](https://spacy.io/universe/project/spacy-textblob)
 * [BERT](https://huggingface.co/docs/transformers/model_doc/bert)
 * [Huggingface](https://huggingface.co/blog/sentiment-analysis-python)
 
