@@ -1,4 +1,4 @@
-# What Do you Mean
+# What Do You Mean
 
 ## Group Members and Roles
 * Abbas Mirza: Frontend and website design
@@ -6,6 +6,14 @@
 * Yen-Hung Huang: Backend development, NLP model, and analysis API
 * Rishab Borah: Backend development and NLP model
 
+## Overview
+Texting is a very opaque medium, and it is difficult to interpret emotional state from the way a person types. But in conversations with friends, family, and important people it is especially important to understand how the other interlocutor feels in a given interaction. What Do You Mean (WDYM) aims to clarify these feelings using sentiment analysis. The application can help the user identify their friends’ emotional states, whether their classmates are being sarcastic, whether their crush is flirting with them, and more.
+Full proposal linked [here](https://docs.google.com/document/d/1ecNHxRK2Cjk1Bu6yDNo16paIQOOBXnW3OerTvXX3kOM/edit).
+
+## Motivations
+* Facilitate communication through texting mediums
+* Disambiguate opaque texting interactions
+* Particularly helpful for people who have difficulty interpreting tonality and sarcasm from text
 
 ## Tools and Frameworks
 
@@ -52,3 +60,12 @@
     cd backend/model
     python3 model-http.py
     ```
+
+## License
+Copyright 2024 Abbas Mirza, Swarnikaa Kiran, Thomas Huang, Rishab Borah
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
