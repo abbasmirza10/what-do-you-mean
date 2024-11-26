@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # What Do You Mean
 
 ## Group Members and Roles
@@ -135,4 +135,3 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
 =======
 # what-do-you-mean
 What Do You Mean (WDYM) is a sentiment and sarcasm analysis application that uses BERT-based models to interpret the emotional tone and detect sarcasm in text messages. This project aims to enhance communication by clarifying the emotional context behind written conversations.
->>>>>>> e6810ead28c31cda78e49f508bcf02894ef6a3c0
