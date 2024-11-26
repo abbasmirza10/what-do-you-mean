@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # What Do You Mean
 
 ## Group Members and Roles
@@ -131,3 +132,7 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+=======
+# what-do-you-mean
+What Do You Mean (WDYM) is a sentiment and sarcasm analysis application that uses BERT-based models to interpret the emotional tone and detect sarcasm in text messages. This project aims to enhance communication by clarifying the emotional context behind written conversations.
+>>>>>>> e6810ead28c31cda78e49f508bcf02894ef6a3c0
